@@ -1,0 +1,12 @@
+{
+    "coc.preferences.colorSupport": true,
+    "Lua.diagnostics.globals": ["vim", "love"],
+    "Lua.diagnostics.disable": ["lowercase-global"],
+    "Lua.workspace.preloadFileSize": 500,
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.workspace.library": ["${3rd}/love2d/library", "~/.config/nvim"],
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.hint.enable": false,
+    "Lua.telemetry.enable": false,
+    "Lua.signatureHelp.enable": true
+}
