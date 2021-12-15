@@ -114,7 +114,7 @@ return require('packer').startup(function(use)
   use {
     'ctrlpvim/ctrlp.vim',
     config = function ()
-      cmd '~/.config/nvim/vim/ctrlp.vim'
+      cmd 'source ~/.config/nvim/vim/ctrlp.vim'
     end
   }
 
