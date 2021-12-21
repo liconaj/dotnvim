@@ -18,7 +18,7 @@ autopairs.add_rules {
   :with_pair(cond.not_before_regex_check("xxx", 3)) -- don't move right when repeat character
   :with_move(cond.none()) -- don't delete if the next character is xx
   :with_del(cond.not_after_regex_check "xx") -- disable  add newline when press <cr>
-  :with_cr(cond.none()),
+  --:with_cr(cond.none()),
 }
 autopairs.add_rules {
   Rule("$$", "$$", "tex"):with_pair(function(opts)

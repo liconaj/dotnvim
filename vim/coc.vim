@@ -16,6 +16,7 @@ let g:coc_global_extensions = [
             \ 'coc-prettier',
             \ 'coc-highlight',
             \ 'coc-lua',
+            \ 'coc-pairs',
             \ ]
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile

@@ -75,6 +75,13 @@ return require('packer').startup(function(use)
   }
 
   -- Completion
+  --use {
+  --  'windwp/nvim-autopairs',
+  --  config = function()
+  --    require 'plugins.autopairs'
+  --  end
+  --}
+
 
   use {
     'neoclide/coc.nvim',
@@ -84,12 +91,6 @@ return require('packer').startup(function(use)
     end
   }
 
-  use {
-    'windwp/nvim-autopairs',
-    config = function()
-      require 'plugins.autopairs'
-    end
-  }
 
   -- Asyncchronyc run
   use {
