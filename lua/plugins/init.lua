@@ -75,13 +75,6 @@ return require('packer').startup(function(use)
   }
 
   -- Completion
-  --use {
-  --  'windwp/nvim-autopairs',
-  --  config = function()
-  --    require 'plugins.autopairs'
-  --  end
-  --}
-
 
   use {
     'neoclide/coc.nvim',
@@ -92,14 +85,14 @@ return require('packer').startup(function(use)
   }
 
 
-  -- Asyncchronyc run
+  -- Build system
   use {
-    'tpope/vim-dispatch',
-    config = function()
-      cmd 'source ~/.config/nvim/vim/dispatch.vim'
+    'pianocomposer321/yabs.nvim',
+    config = function ()
+      require 'plugins.build'
     end
   }
-  use 'radenling/vim-dispatch-neovim'
+
 
   -- Sessions
   use 'xolox/vim-misc'

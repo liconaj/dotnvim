@@ -72,6 +72,10 @@ map {'n', '<leader>ss', ':SaveSession<Space>'}
 map {'n', '<leader>sd', ':DeleteSession<CR>'}
 map {'n', '<leader>sc', ':CloseSession<CR>'}
 
+-- Build system
+map {'n', '<F5>', ':YabsDefaultTask<CR>'}
+map {'n', '<F6>', ':YabsTask<space>'}
+
 -- Save as super user
 map {'c', 'w!!', 'w !sudo tee %', noremap=false}
 
