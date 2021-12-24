@@ -50,6 +50,9 @@ map {'v', '>', '>gv', noremap=false}
 map {'n', '<M-p>', '"+P=\']'}
 map {'i', '<M-p>', '<C-o>"+P<C-o>=\']'}
 
+-- Save as super user
+map {'c', 'w!!', 'w !sudo tee %', noremap=false}
+
 -----------------------------------------------------------
 -- Applications & Plugins
 -----------------------------------------------------------
@@ -67,17 +70,15 @@ map {'n', '<leader>r', ':CtrlPMRUFiles<CR>'}
 map {'n', '<leader>pa', ':CtrlPBookmarkDirAdd<space>'}
 
 -- Sessions
-map {'n', '<leader>so', ':OpenSession<Space>'}
-map {'n', '<leader>ss', ':SaveSession<Space>'}
-map {'n', '<leader>sd', ':DeleteSession<CR>'}
-map {'n', '<leader>sc', ':CloseSession<CR>'}
+map {'n', '<leader>so', ':OpenSession<Space>', silent=true}
+map {'n', '<leader>ss', ':SaveSession<Space>', silent=true}
+map {'n', '<leader>sd', ':DeleteSession<CR>', silent=true}
+map {'n', '<leader>sc', ':CloseSession<CR>', silent=true}
 
 -- Build system
 map {'n', '<F5>', ':YabsDefaultTask<CR>'}
 map {'n', '<F6>', ':YabsTask<space>'}
 
--- Save as super user
-map {'c', 'w!!', 'w !sudo tee %', noremap=false}
 
 -----------------------------------------------------------
 -- Abbreviations

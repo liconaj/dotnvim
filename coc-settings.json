@@ -1,5 +1,7 @@
 {
     "coc.preferences.colorSupport": true,
+
+    // Lua
     "Lua.diagnostics.globals": ["vim", "love"],
     "Lua.diagnostics.disable": ["lowercase-global"],
     "Lua.workspace.preloadFileSize": 500,
@@ -8,5 +10,10 @@
     "Lua.workspace.checkThirdParty": false,
     "Lua.hint.enable": false,
     "Lua.telemetry.enable": false,
-    "Lua.signatureHelp.enable": true
+    "Lua.signatureHelp.enable": true,
+
+    // Python
+    "pyright.enable": true,
+    "pyright.disableCompletion": false,
+    "pyright.disableDiagnostics": false
 }

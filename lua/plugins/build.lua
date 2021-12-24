@@ -26,9 +26,10 @@ local chordpro_config = {
   default_task = 'Compile',
   tasks = {
     ['Compile'] = {
-        command = 'chordpro %'
+        command = 'chordpro %',
+        output = 'terminal'
     },
-    ['Compile Songbook'] = {
+    ['songbook'] = {
         command = 'chordpro *.cho -o songbook.pdf'
     }
   }

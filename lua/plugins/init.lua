@@ -86,6 +86,7 @@ return require('packer').startup(function(use)
 
 
   -- Build system
+  use 'pianocomposer321/consolation.nvim'
   use {
     'pianocomposer321/yabs.nvim',
     config = function ()
